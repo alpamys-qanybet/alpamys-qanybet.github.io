@@ -1,0 +1,42 @@
+<div class="row">
+    <!-- Start map -->
+    <div class="section-wrapper g-map z-depth-1">
+        <div id="map"> </div>
+    </div>
+
+    <!--=======================================
+     Contact
+    ==========================================-->
+
+    <div class="section-wrapper z-depth-1">
+        <div class="section-icon col s12 m12 l2">
+            <i class="fa fa-paper-plane-o"></i>
+        </div>
+        <div class="col s12 m12 l10 wow fadeIn a1" data-wow-delay="0.1s">
+
+            <h2>Contact</h2>
+            <div class="contact-form" id="contact">
+                <div class="row">
+                    <form role="form" id="contactForm" data-toggle="validator">
+                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                        <div class="input-field col s12">
+                            <label for="name" class="h4">Name *</label>
+                            <input type="text" class="form-control validate" id="name" required data-error="NEW ERROR MESSAGE">
+                        </div>
+                        <div class="input-field col s12">
+                            <label for="email" class="h4">Email *</label>
+                            <input type="email" class="form-control validate" id="email"  required>
+                        </div>
+                        <div class="input-field col s12">
+                            <label for="message" class="h4 ">Message *</label>
+                            <textarea id="message" class="form-control materialize-textarea validate" required></textarea>
+                        </div>
+                        <button type="submit" id="form-submit" class="btn btn-success">Submit</button>
+                        <div class="clearfix"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+     </div>
+</div>
+<!-- end row -->

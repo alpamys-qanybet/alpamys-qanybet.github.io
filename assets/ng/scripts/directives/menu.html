@@ -1,0 +1,26 @@
+<breadcrumbs list="breadcrumbs" fetch="fetch(id)" onroot="onroot"></breadcrumbs>
+
+<div class="row menu-row">
+	<div ng-repeat="item in menu" class="menu-list">
+		<a ng-click="select(item)">
+			<div class="menu-item" ng-class="{
+					f12: type=='service' && item.id == 2,
+					f16: type=='service' && item.id == 34, 
+					f20: type=='service' && (item.id == 22 || item.id == 24 || item.id == 27), 
+					f22: type=='service' && (item.id == 36 || item.id == 17 || item.id == 16 || item.id == 20 || item.id == 21 || item.id == 23 || item.id == 25 || item.id == 26), 
+					f25: type=='service' && (item.id == 11 || item.id == 10 || item.id == 12 || item.id == 13 || item.id == 14 || item.id == 15),
+					f28: type=='service' && item.id == 30
+				}">
+				<div class="mybtn">{{item.name[lng]}}</div>
+			</div>
+		</a>
+	</div>
+
+	<div ng-if="menu.length == 0" class="menu-list" ng-show="onroot">
+		Empty
+	</div>
+
+	<div ng-bind-html="content[lng]" class="timetable-div"></div>
+	
+	<div ng-transclude></div>
+</div>

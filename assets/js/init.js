@@ -4,25 +4,25 @@ $(document).ready(function() {
     /***************************************************************************/
             /* NAVIGATION  */
     /***************************************************************************/
-   
+
       $('.button-collapse').sideNav();
- 
+
     /**************************************************************************
-                 SKILL BAR 
+                 SKILL BAR
     **************************************************************************/
 
     $(".determinate").each(function(){
       var width = $(this).text();
       $(this).css("width", width)
         .empty()
-        .append('<i class="fa fa-circle"></i>');                
+        .append('<i class="fa fa-circle"></i>');
     });
 
 
     /**************************************************************************
             Style demo
     **************************************************************************/
-   
+
     $('.cv-style-switch').click(function(){
         if($(this).hasClass('open')){
           $(this).removeClass('open');
@@ -33,11 +33,11 @@ $(document).ready(function() {
         }
     });
 
-  
+
     /**************************************************************************
-             BLOG POST 
+             BLOG POST
     **************************************************************************/
-  
+
     jQuery(window).on('load', function(){ var $ = jQuery;
         $('.blog').masonry({
           itemSelector: '.blog-post',
@@ -49,8 +49,8 @@ $(document).ready(function() {
 
     var height = $('.caption').height();
         if($(window).width()){
-          $('#featured').css('height', height);   
-          $('#featured img').css('height', height);   
+          $('#featured').css('height', height);
+          $('#featured img').css('height', height);
         }
 
 
@@ -86,7 +86,7 @@ $(document).ready(function() {
         var name = $("#name").val();
         var email = $("#email").val();
         var message = $("#message").val();
-        
+
         $.ajax({
             type: "POST",
             url: "process.php",
@@ -106,7 +106,7 @@ $(document).ready(function() {
         submitMSG(true, "Message Sent!")
     }
     function formError(){
-        $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
+        $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
         function(){
             $(this).removeClass();
         });
@@ -119,13 +119,13 @@ $(document).ready(function() {
         }
         $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
     }
-    
-    
+
+
     /**************************************************************************
        Projects
     **************************************************************************/
     $('#portfolio-item').mixItUp();
-    
+
     $('.sa-view-project-detail').on('click', function(event) {
         event.preventDefault();
         var href          = $(this).attr('href') + ' ' + $(this).attr('data-action'),
@@ -175,38 +175,3 @@ $(document).ready(function() {
     });
 
 });
-
-    /***************************************************************************
-                MAP
-    ***************************************************************************/
-    
-    google.maps.event.addDomListener(window, 'load', init);
-    function init() {
-        var mapOptions = {
-          zoom: 17,
-          scrollwheel: false, 
-          navigationControl: false,
-          center: new google.maps.LatLng(24.906308,91.870413),
-          styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},
-          {"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},
-          {"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},
-          {"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},
-          {"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},
-          {"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},
-          {"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},
-          {"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},
-          {"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},
-          {"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},
-          {"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},
-          {"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},
-          {"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
-      };
-      var mapElement = document.getElementById('map');
-      var map = new google.maps.Map(mapElement, mapOptions);
-      var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(24.906308,91.870413),
-          map: map,
-          title: '24 Golden Tower (2nd floor), Amborkhana, Sylhet.!'
-      });
-    }
-
