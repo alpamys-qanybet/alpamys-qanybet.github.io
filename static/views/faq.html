@@ -1,0 +1,54 @@
+<div class="faq">
+	<div class="row">
+		<div class="col-lg-12" align="center">
+			<!-- {{vv.title}} -->
+
+			<!-- <br/> -->
+			<!-- <br/> -->
+			<!-- {{vv.content}} -->
+			<a ng-click="prev()" class="dir left" ng-show="!is.first">
+				<i class="fa fa-chevron-left"></i>
+			</a>
+			<a ng-click="next()" class="dir right" ng-show="!is.last">
+				<i class="fa fa-chevron-right"></i>
+			</a>
+			<div class="question-body">
+				<!--div class="question">
+					<h2>{{question.question}}</h2>
+				</div>
+				<div ng-repeat="c in question.answer track by $index" class="answer">
+					<h3>{{c.header}}</h3>
+					<p ng-bind-html="p" ng-repeat="p in c.p track by $index"></p>
+					<div ng-repeat="t in c.table track by $index" class="timetable">
+						<h1>{{t.name}}</h1>
+						<table class="table table-bordered /*table-striped*/ table-condensed" style="border: 1px solid #504E55 !important;">
+							<tr>
+								<th rowspan="{{h.rowspan}}" ng-repeat="h in t.h track by $index"><p ng-bind-html="h.name"></p></th>
+							</tr>
+							<tr ng-repeat="r in t.r track by $index">
+								<! - - <td>{{r.d}}</td> - - >
+								<! - - <td ng-repeat="d in r.d track by $index">{{d}}</td> - - >
+								<td rowspan="{{d.rowspan}}" colspan="{{d.colspan}}" ng-repeat="d in r.d track by $index"><p ng-bind-html="d.name"></p></td>
+							</tr>
+						</table>
+					</div>
+				</div-->
+				<div class="question">
+					<h2 ng-if="$cookies.get('lng') == 'kk'">{{question.title_kz}}</h2>
+					<h2 ng-if="$cookies.get('lng') == 'en'">{{question.title_en}}</h2>
+					<h2 ng-if="$cookies.get('lng') == 'ru'">{{question.title_ru}}</h2>
+				</div>
+				<div class="answer" ng-if="$cookies.get('lng') == 'kk'" ng-bind-html="question.content_kz"></div>
+				<div class="answer" ng-if="$cookies.get('lng') == 'en'" ng-bind-html="question.content_en"></div>
+				<div class="answer" ng-if="$cookies.get('lng') == 'ru'" ng-bind-html="question.content_ru"></div>
+			</div>
+			<!--div class="footer" align="left">
+				<p>На ваши вопросы отвечает главный врач Городской поликлиники №2 Тухтаров Каирбек Насирович, 22.11.1960 г.р.,</p>
+				<p>образование высшее, медицинское. Окончил Актюбинский государственный медицинский институт в 1987 году.</p>
+				<p>Работает с 01.02.2012 года главным врачом ГКП «ГП № 2» на ПХВ г. Актобе.</p>
+				<p>Депутат Маслихата Актюбинской области.</p>
+				<p>Награждён медалью «Шапагат».</p>
+			</div-->
+		</div>
+	</div>
+</div>

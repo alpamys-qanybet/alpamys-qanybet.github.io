@@ -1,0 +1,14 @@
+<div class="home">
+	<div class="row menu-row">
+		<div ng-repeat="item in menu" class="menu-list">
+			<a href="#/{{item.url}}">
+				<div class="menu-item">
+					<div class="mybtn">
+						<img class="img-responsive" src="{{item.img}}">
+						<div class="item-header">{{'nav.'+item.code}}</div>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>

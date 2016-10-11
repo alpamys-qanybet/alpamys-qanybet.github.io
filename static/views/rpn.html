@@ -1,0 +1,43 @@
+
+<div class="kiosk-info-main">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 iin">
+            <div ng-show="is.queue">
+                <div ng-show="is.iin">
+                    <h1>Введите ИИН</h1>
+                    <div>
+                        <input type="text" ng-model="iin" ng-focus="is.keyboard = true"/>
+                    </div>
+                </div>
+                <div ng-show="!is.iin">
+                    <div ng-show="iinNotExists">ИИН не существует</div>
+                    <div ng-show="!iinNotExists">
+                        <div>
+                            {{person.lastName}} {{person.firstName}} {{person.secondName}}
+                        </div>
+                        <div ng-show="person.activeAttachment">
+                            {{person.activeAttachment.orgHealthCare.name}}
+                        </div>
+
+                        <div ng-show="!person.activeAttachment">
+                            Еш жерге тіркелмеген
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div ng-show="!is.queue">
+                Info
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class="row keyboard" ng-show="is.keyboard">
+        <div class="col-md-1" ng-repeat="i in keys">
+            <a href ng-click="append(''+i)" class="btn btn-primary key">{{i}}</a>
+        </div>
+        <div class="col-md-1">
+            <a href ng-click="clear()" class="btn btn-primary key">C</a>
+        </div>
+    </div>
+</div>

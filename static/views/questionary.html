@@ -1,0 +1,63 @@
+<div class="questionary">
+	<div class="row">
+		<div class="col-lg-12" align="center" ng-show="is.inProcess">
+			<a ng-click="prev()" class="dir left" ng-show="!is.first">
+				<i class="fa fa-chevron-left"></i>
+			</a>
+			<a ng-click="next()" class="dir right" ng-show="!is.last">
+				<i class="fa fa-chevron-right"></i>
+			</a>
+			<div class="question-body">
+				<!-- {{map.question['q'+counter]}} -->
+				<div class="question">
+					<h2>{{map.question['q'+counter].question}}</h2>
+				</div>
+				<!--div ng-repeat="o in map.question['q'+counter].option track by $index" ng-show="map.question['q'+counter].option" class='options'>
+					<label>
+						<input type="radio" ng-model="map.question['q'+counter].answer" ng-value="o">
+						&nbsp;&nbsp;{{o}}
+					</label>
+				</div-->
+
+				<!--div class="btn-group btn-group-vertical" data-toggle="buttons" ng-show="question.option">
+					<label class="btn well" ng-repeat="o in question.option track by $index" style="color: black; width: 400px;" >
+						<input type="radio" ng-model="question.answer" name="options-{{counter}}" id="option-{{counter}}-{{$index}}">{{o}}
+					</label>
+				</div-->
+
+				<div class="btn-group btn-group-vertical" data-toggle="buttons" ng-show="map.question['q'+counter].option" style="padding-top: 130px;">
+					<label class="btn well" ng-repeat="o in map.question['q'+counter].option track by $index" style="color: black; width: 800px;" ng-click="map.question['q'+counter].answer = o" ng-class="{active: map.question['q'+counter].answer == o}">
+						{{o}}
+					</label>
+				</div>
+				
+
+				<!--div class="btn-group btn-group-vertical" data-toggle="buttons">
+					<label class="btn well">
+						<input type="radio" name="options" id="option1"> Option 1
+					</label>
+					<label class="btn well">
+					<input type="radio" name="options" id="option2"> Option 2
+					</label>
+					<label class="btn well">
+					<input type="radio" name="options" id="option3"> Option 3
+					</label>
+				</div-->
+				<div ng-show="!map.question['q'+counter].option">
+					<textarea ng-model="map.question['q'+counter].answer" ng-focus="is.keyboard = true"></textarea>
+				</div>
+				<div class="keyboard" ng-show="is.keyboard">
+					<div ng-repeat="i in keys"> <!-- class="col-md-1" -->
+						<a href ng-click="append(''+i)" class="btn btn-primary key">{{i}}</a>
+					</div>
+					<div>  <!-- class="col-md-1" -->
+						<a href ng-click="clear()" class="btn btn-primary key">C</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-12" align="center" ng-show="!is.inProcess">
+			Благодарим за сотрудничество
+		</div>
+	</div>
+</div>

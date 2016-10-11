@@ -1,0 +1,47 @@
+<div class="faq-menu">
+	<div class="row menu-row">
+		<div ng-repeat="item in menu" class="menu-list">
+			<a href="#/{{item.url}}">
+				<div class="menu-item">
+					<div class="mybtn">
+						<div class="item-header" ng-if="$cookies.get('lng') == 'kk'">{{item.title_kz}}</div>
+						<div class="item-header" ng-if="$cookies.get('lng') == 'en'">{{item.title_en}}</div>
+						<div class="item-header" ng-if="$cookies.get('lng') == 'ru'">{{item.title_ru}}</div>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
+
+
+	<!-- <div class="row">
+		<div class="col-lg-6">
+			{{'nav.schedule' | i18next}}
+			<img class="img-responsive" src="static/img/home/1.jpg">
+		</div>
+		<div class="col-lg-6">
+			{{'nav.scheme' | i18next}}
+			<img class="img-responsive" src="static/img/home/2.jpg">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-6">
+			{{'nav.service' | i18next}}
+			<img class="img-responsive" src="static/img/home/3.jpg">
+		</div>
+		<div class="col-lg-6">
+			{{'nav.head' | i18next}}
+			<img class="img-responsive" src="static/img/home/4.jpg">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-6">
+			{{'nav.faq' | i18next}}
+			<img class="img-responsive" src="static/img/home/5.jpg">
+		</div>
+		<div class="col-lg-6">
+			{{'nav.questionary' | i18next}}
+			<img class="img-responsive" src="static/img/home/6.jpg">
+		</div>
+	</div> -->

@@ -1,0 +1,90 @@
+<div class="scheme">
+	<!-- <h2>Contact</h2> -->
+	<div class="row">
+		<div class="col-lg-3">
+			<div class="menu-row">
+				<div ng-repeat="item in menuoneleft" class="menu-list" ng-show="floor == 1">
+					<a ng-click="cab(item.cab)">
+						<div class="menu-item">
+							<div class="mybtn">
+								<div class="item-header">{{item.cab}} {{item.name}}</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div ng-repeat="item in menutwoleft" class="menu-list" ng-show="floor == 2">
+					<a ng-click="cab(item.cab)">
+						<div class="menu-item">
+							<div class="mybtn">
+								<div class="item-header">{{item.cab}} {{item.name}}</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-6">
+			<div class="scheme-nav" style="position:absolute; z-index:2;">
+				<!-- <div class=""> -->
+					<span class="menu-list pull-left">
+						<a ng-click="home()">
+							<div class="menu-item">
+								<div class="mybtn">
+									<div class="item-header">Негізгі бет</div>
+								</div>
+							</div>
+						</a>
+					</span>
+
+					<span class="menu-list pull-right">
+						<a ng-click="showFloor(1)" ng-show="floor == 2">
+							<div class="menu-item">
+								<div class="mybtn">
+									<div class="item-header">1 қабат</div>
+								</div>
+							</div>
+						</a>
+					</span>
+
+					<span class="menu-list pull-right">
+						<a ng-click="showFloor(2)" ng-show="floor == 1">
+							<div class="menu-item">
+								<div class="mybtn">
+									<div class="item-header">2 қабат</div>
+								</div>
+							</div>
+						</a>
+					</span>
+				<!-- </div> -->
+			</div>
+			<img ng-repeat="item in menuoneleft" src="static/img/scheme/{{item.cab}}.png" ng-show="map.img['m'+item.cab]" style="position:absolute;z-index:1;"/>
+			<img ng-repeat="item in menuoneright" src="static/img/scheme/{{item.cab}}.png" ng-show="map.img['m'+item.cab]" style="position:absolute;z-index:1;"/>
+			<img ng-repeat="item in menutwoleft" src="static/img/scheme/{{item.cab}}.png" ng-show="map.img['m'+item.cab]" style="position:absolute;z-index:1;"/>
+			<img ng-repeat="item in menutworight" src="static/img/scheme/{{item.cab}}.png" ng-show="map.img['m'+item.cab]" style="position:absolute;z-index:1;"/>
+			<img src="static/img/scheme/scheme1.png" ng-show="floor == 1"/>
+			<img src="static/img/scheme/scheme2.png" ng-show="floor == 2"/>
+		</div>
+		<div class="col-lg-3">
+			<div class="menu-row">
+				<div ng-repeat="item in menuoneright" class="menu-list" ng-show="floor == 1">
+					<a ng-click="cab(item.cab)">
+						<div class="menu-item">
+							<div class="mybtn">
+								<div class="item-header">{{item.cab}} {{item.name}}</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div ng-repeat="item in menutworight" class="menu-list" ng-show="floor == 2">
+					<a ng-click="cab(item.cab)">
+						<div class="menu-item">
+							<div class="mybtn">
+								<div class="item-header">{{item.cab}} {{item.name}}</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

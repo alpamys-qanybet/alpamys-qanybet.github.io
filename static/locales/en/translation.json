@@ -1,0 +1,139 @@
+{
+	"language": {
+		"kk": "Қазақ",
+		"ru": "Русский",
+		"en": "English"
+	},
+	"button": {
+        "add": "Add",
+        "edit": "Edit",
+        "delete": "Delete",
+        "cancel": "Cancel",
+        "save": "Save",
+        "close": "Close",
+        "enable": "Enable",
+        "disable": "Disable",
+        "enabled": "Enabled",
+        "disabled": "Disabled"
+    },
+	"menu": {
+		"schedule": "Schedule",
+		"journal": "Journal",
+		"settings": "Settings"
+	},
+	"navbar": {
+		"profile": "Profile",
+		"quit": "Quit",
+		"hide-menu": "Hide menu"
+	},
+	"nav": {
+		"home": "Main page",
+		"schedule": "Schedule",
+		"scheme": "Scheme",
+		"structure": "Structure",
+		"service": "Service",
+		"head": "Head",
+		"faq": "FAQ",
+		"questionary": "Feedback",
+		"about": "About",
+		"gallery": "Gallery",
+		"contact": "Contacts",
+		"support": "Support",
+		"info": "Information",
+		"statistics": "Statistics",
+		"policy": "Policy",
+		"certificate": "Certificats",
+		"rpn": "РПН",
+		"sitemap": "Site map"
+	},
+	"time": {
+		"weekday": {
+			"0": {
+				"name": "Sunday",
+				"shortname": "Sun"
+			},
+			"1": {
+				"name": "Monday",
+				"shortname": "Mon"
+			},
+			"2": {
+				"name": "Tuesday",
+				"shortname": "Tue"
+			},
+			"3": {
+				"name": "Wednesday",
+				"shortname": "Wed"
+			},
+			"4": {
+				"name": "Thursday",
+				"shortname": "Thu"
+			},
+			"5": {
+				"name": "Friday",
+				"shortname": "Fri"
+			},
+			"6": {
+				"name": "Saturday",
+				"shortname": "Sat"
+			}
+		},
+		"month": {
+			"01": "January",
+			"02": "February",
+			"03": "March",
+			"04": "April",
+			"05": "May",
+			"06": "June",
+			"07": "July",
+			"08": "August",
+			"09": "September",
+			"10": "October",
+			"11": "November",
+			"12": "December"
+		}
+	},
+	"count": {
+		"client": "clients"
+	},
+	"ticket": {
+		"cabinet": "Cabinet",
+		"cabinets": "Cabinets",
+		"operator": "Doctor",
+		"operators": "Doctors",
+		"date": "Datetime"
+	},
+	"kiosk": {
+		"line-list": {
+			"empty": "Empty"
+		}
+	},
+	"line": {
+		"name": "Line",
+		"type": {
+			"raw": "Raw",
+			"appointment": "appointment"
+		},
+		"limit": "Line limit"
+	},
+	"operator": {
+		"name": "Doctor"
+	},
+	"report": {
+		"attendance": {
+			"line": "Client-Line attendance",
+			"operator": "Client-Doctor attendance",
+			"time": "Client-Time attendance",
+			"list": "Client attendance"
+		},
+		"print": {
+			"date": "Date",
+			"time": "Time",
+			"line": "Line",
+			"operator": "Doctor",
+			"waiting": "Waiting Time",
+			"handling": "Procedure Time",
+			"clientcount": "Client count",
+			"cabinet": "Cabinet"
+		}
+	}
+}
