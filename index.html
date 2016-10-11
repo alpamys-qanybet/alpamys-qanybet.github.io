@@ -8,9 +8,7 @@
         <meta charset="utf-8">
 
         <!-- TITLE OF SITE-->
-        <title>
-            Al Rayhan
-        </title>
+        <title>Alpamys Qanybet</title>
 
         <!-- META TAG -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -100,7 +98,7 @@
                         <div class="heading">
                             <!-- IMAGE -->
                             <div class="feature-img">
-                                <a href="index-2.html"><img ng-src="assets/images/alp{{random}}.jpg" class="responsive-img" alt=""></a>
+                                <a href="#/home"><img ng-src="assets/images/alp{{random}}.jpg" class="responsive-img" alt=""></a>
                             </div>
                             <!-- NAVIGATION -->
                             <div class=" nav-icon">
@@ -142,7 +140,11 @@
                                 <div class="col m12 s12 l9 info wow fadeIn a1" data-wow-delay="0.1s">
                                     <!-- text -->
                                     <div class="section-item-details">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua . Ld do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                        <p>IT specialist, leading developer</p>
+                                        <p>co-founder of "Enterprise Solutions"</p>
+                                        <p>Like Workflow, Refactoring, Design Patterns</p>
+                                        <p>Highly concentrated, hard working</p>
+                                        <p>Explain me what to do and I will do it with passion!</p>
                                     </div>
                                 </div>
                             </div>
@@ -236,52 +238,11 @@
                                     <h3>Professional Skills
                                     </h3>
 
-                                    <span>Java</span>
-                                    <div class="progress">
-                                        <div class="determinate">
-                                            90%
+                                    <div ng-repeat="skill in skills">
+                                        <span>{{skill.name}}</span>
+                                        <div class="progress">
+                                            <div class="determinate">{{skill.progress}}%</div>
                                         </div>
-                                    </div>
-
-                                    <span>JBoss, GlassFish</span>
-                                    <div class="progress">
-                                        <div class="determinate">
-                                            75%</div>
-                                    </div>
-
-                                    <span>JAAS</span>
-                                    <div class="progress">
-                                        <div class="determinate">95%</div>
-                                    </div>
-
-                                    <span>ORM(Hibernate, JPA)</span>
-                                    <div class="progress">
-                                        <div class="determinate">80%</div>
-                                    </div>
-
-                                    <span>HornetQ, Qpidd, JMS</span>
-                                    <div class="progress">
-                                        <div class="determinate">90%</div>
-                                    </div>
-
-                                    <span>PostgreSQL, MySQL, Oracle</span>
-                                    <div class="progress">
-                                        <div class="determinate">70%</div>
-                                    </div>
-
-                                    <span>Linux, Remote Server Administration, Bash Scripting</span>
-                                    <div class="progress">
-                                        <div class="determinate">40%</div>
-                                    </div>
-
-                                    <span>HTML, CSS, JS</span>
-                                    <div class="progress">
-                                        <div class="determinate">90%</div>
-                                    </div>
-
-                                    <span>Angular JS</span>
-                                    <div class="progress">
-                                        <div class="determinate">85%</div>
                                     </div>
                                 </div>
                             </div>
