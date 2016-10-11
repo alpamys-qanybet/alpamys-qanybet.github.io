@@ -2,10 +2,11 @@
 (function() {
 
   angular.module('tmg').controller('HomeCtrl', [
-    '$scope', '$rootScope', '$cookies', '$state', function($scope, $rootScope, $cookies, $state) {
+    '$scope', '$rootScope', '$cookies', '$state', '$locales', function($scope, $rootScope, $cookies, $state, $locales) {
       console.log('HomeCtrl');
       $rootScope.current = 'home';
       $rootScope.showNav = false;
+      $locales.changeLang('kk');
       return $scope.menu = [
         {
           code: 'schedule',

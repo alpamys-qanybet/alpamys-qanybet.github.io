@@ -1,10 +1,10 @@
-# angular.module('tmg').controller 'HomeCtrl', ['$scope', '$rootScope', '$cookies', '$state', '$locales', ($scope, $rootScope, $cookies, $state, $locales)->
-angular.module('tmg').controller 'HomeCtrl', ['$scope', '$rootScope', '$cookies', '$state', ($scope, $rootScope, $cookies, $state)->
+angular.module('tmg').controller 'HomeCtrl', ['$scope', '$rootScope', '$cookies', '$state', '$locales', ($scope, $rootScope, $cookies, $state, $locales)->
+# angular.module('tmg').controller 'HomeCtrl', ['$scope', '$rootScope', '$cookies', '$state', ($scope, $rootScope, $cookies, $state)->
 	console.log 'HomeCtrl'
 	$rootScope.current = 'home'
 	$rootScope.showNav = false
 
-	# $locales.changeLang 'kk'
+	$locales.changeLang 'kk'
 
 	$scope.menu = [
 		code: 'schedule'

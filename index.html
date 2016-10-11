@@ -24,7 +24,7 @@
                     <li ng-class="{'active': nav.url == current}" ng-repeat="nav in navs">
                         <a href="#/{{nav.url}}">
                             <i class="fa {{nav.icon}}"></i>
-                        	{{'nav.'+nav.name}}
+                        	{{'nav.'+nav.name | i18next}}
                         </a>
                     </li>
                 </ul>
@@ -35,7 +35,7 @@
 				<div class="footer">
 		            <div class="row">
 		                <div class="col-lg-4 clock">
-		                    {{clock | date: 'dd'}} {{ 'time.month.'+(clock | date: 'MM')}} {{ clock | date:'HH:mm:ss'}}
+		                    {{clock | date: 'dd'}} {{ 'time.month.'+(clock | date: 'MM') | i18next}} {{ clock | date:'HH:mm:ss'}}
 		                </div>
 
 		                <div class="col-lg-4" text-align="center" style="text-align:center;">
@@ -67,15 +67,15 @@
 	<script type='text/javascript' src='static/lib/angular/angular-cookies.min.js'></script>
 	<script type='text/javascript' src='static/lib/angular/angular-sanitize.min.js'></script>
 
-	<!-- <script type="text/javascript" src="static/lib/underscore/underscore-min.js"></script> -->
-	<!-- <script type='text/javascript' src="static/lib/restangular/restangular.js"></script> -->
+	<script type="text/javascript" src="static/lib/underscore/underscore-min.js"></script>
+	<script type='text/javascript' src="static/lib/restangular/restangular.js"></script>
 
-	<!-- <script type="text/javascript" src="static/lib/i18next/i18next-1.7.4.min.js"></script> -->
-	<!-- <script type="text/javascript" src="static/lib/ng-i18next/ng-i18next.min.0.5.2.js"></script> -->
+	<script type="text/javascript" src="static/lib/i18next/i18next-1.7.4.min.js"></script>
+	<script type="text/javascript" src="static/lib/ng-i18next/ng-i18next.min.0.5.2.js"></script>
 
 	<script type="text/javascript" src="static/scripts/app.js"></script>
 
-	<!-- <script type="text/javascript" src="static/scripts/services/locales.js"></script> -->
+	<script type="text/javascript" src="static/scripts/services/locales.js"></script>
 	<!-- <script type="text/javascript" src="static/scripts/services/api.js"></script> -->
 	<!-- <script type="text/javascript" src="static/scripts/services/dictionary.js"></script> -->
 

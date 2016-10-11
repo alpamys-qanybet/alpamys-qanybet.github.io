@@ -1,33 +1,34 @@
 /* 'use strict'; */
 /* global Highcharts */
 
-var domainURL = window.location.origin;
+var domainUrl = window.location.origin;
+// var domainUrl = 'http://localhost/github/alpamys-qanybet.github.io';
+console.log(domainUrl);
 
-// angular.module('jm.i18next').config(['$i18nextProvider', function($i18nextProvider) {
-//
-// 	$i18nextProvider.options = {
-// 		//lng: 'kk',
-// 		preload: ['ru', 'en'],
-// 		fallbackLng: false,
-// 		useCookie: true,
-// 		useLocalStorage: false,
-// 		resGetPath: domainUrl+'/static/locales/__lng__/__ns__.json'
-// 	};
-// }]);
+angular.module('jm.i18next').config(['$i18nextProvider', function($i18nextProvider) {
+	$i18nextProvider.options = {
+		//lng: 'kk',
+		preload: ['ru', 'en'],
+		fallbackLng: false,
+		useCookie: true,
+		useLocalStorage: false,
+		resGetPath: domainUrl+'/static/locales/__lng__/__ns__.json'
+	};
+}]);
 
-// angular.module('tmg', ['ui.router', 'restangular', 'ngCookies', 'ngSanitize', 'jm.i18next'])
+angular.module('tmg', ['ui.router', 'restangular', 'ngCookies', 'ngSanitize', 'jm.i18next'])
 // angular.module('tmg', []);
-angular.module('tmg', ['ui.router', 'ngCookies', 'ngSanitize'])
-	// .config(['RestangularProvider', function(RestangularProvider) {
-	// 	RestangularProvider.setBaseUrl(domainUrl+'/rest/');
-	// 	RestangularProvider.setDefaultHeaders( {'content-type': 'application/json; charset=utf-8'});
-	// 	RestangularProvider.setRequestInterceptor(function(elem, operation) {
-	// 		if (operation === "remove") {
-	// 			return undefined;
-	// 		}
-	// 		return elem;
-	// 	});
-	// }])
+// angular.module('tmg', ['ui.router', 'restangular', 'ngCookies', 'ngSanitize'])
+	.config(['RestangularProvider', function(RestangularProvider) {
+		RestangularProvider.setBaseUrl(domainUrl+'/rest/');
+		RestangularProvider.setDefaultHeaders( {'content-type': 'application/json; charset=utf-8'});
+		RestangularProvider.setRequestInterceptor(function(elem, operation) {
+			if (operation === "remove") {
+				return undefined;
+			}
+			return elem;
+		});
+	}])
 	.config(['$stateProvider', function($stateProvider) {
 		$stateProvider
 		.state('home', {
@@ -113,10 +114,10 @@ angular.module('tmg', ['ui.router', 'ngCookies', 'ngSanitize'])
 	//
   //       };
   //   })
-	// .run(['$rootScope', '$state', '$stateParams', '$cookies', function($rootScope, $state, $stateParams, $cookies) {
-	// 	$rootScope.$state = $state;
-	// 	$rootScope.$stateParams = $stateParams;
-	// 	$rootScope.$cookies = $cookies;
-	//
-	// 	$rootScope.covering = true;
-	// }]);
+	.run(['$rootScope', '$state', '$stateParams', '$cookies', function($rootScope, $state, $stateParams, $cookies) {
+		$rootScope.$state = $state;
+		$rootScope.$stateParams = $stateParams;
+		$rootScope.$cookies = $cookies;
+
+		$rootScope.covering = true;
+	}]);

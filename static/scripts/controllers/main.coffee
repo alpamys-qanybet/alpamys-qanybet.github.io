@@ -1,11 +1,11 @@
-# angular.module('tmg').controller 'MainCtrl', ['$scope', '$rootScope', '$state', '$cookies', '$locales', '$interval', ($scope, $rootScope, $state, $cookies, $locales, $interval)->
-angular.module('tmg').controller 'MainCtrl', ['$scope', '$rootScope', '$state', '$cookies', '$interval', ($scope, $rootScope, $state, $cookies, $interval)->
+angular.module('tmg').controller 'MainCtrl', ['$scope', '$rootScope', '$state', '$cookies', '$locales', '$interval', ($scope, $rootScope, $state, $cookies, $locales, $interval)->
+# angular.module('tmg').controller 'MainCtrl', ['$scope', '$rootScope', '$state', '$cookies', '$interval', ($scope, $rootScope, $state, $cookies, $interval)->
 # angular.module('tmg').controller 'MainCtrl', ['$scope', '$rootScope', '$interval', ($scope, $rootScope, $interval)->
 	console.log 'MainCtrl'
 	$rootScope.covering = true
 	$rootScope.showNav = true
 
-	# $locales.changeLang $locales.current()
+	$locales.changeLang $locales.current()
 
 	$scope.flags = [
 		code: 'ru'

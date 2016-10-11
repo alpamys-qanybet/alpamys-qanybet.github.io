@@ -2,10 +2,11 @@
 (function() {
 
   angular.module('tmg').controller('MainCtrl', [
-    '$scope', '$rootScope', '$state', '$cookies', '$interval', function($scope, $rootScope, $state, $cookies, $interval) {
+    '$scope', '$rootScope', '$state', '$cookies', '$locales', '$interval', function($scope, $rootScope, $state, $cookies, $locales, $interval) {
       console.log('MainCtrl');
       $rootScope.covering = true;
       $rootScope.showNav = true;
+      $locales.changeLang($locales.current());
       $scope.flags = [
         {
           code: 'ru',
