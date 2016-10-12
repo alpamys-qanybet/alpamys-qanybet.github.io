@@ -6,7 +6,7 @@ angular.module('tmg').controller 'HomeCtrl', ['$scope', '$rootScope', '$cookies'
 
 	$rootScope.random = Math.floor(Math.random() * $rootScope.randomRange)
 
-	$locales.changeLang 'kk'
+	$locales.changeLang 'en'
 
 	$scope.menu = [
 		code: 'schedule'

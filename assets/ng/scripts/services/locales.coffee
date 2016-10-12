@@ -1,13 +1,13 @@
 angular.module('tmg').service '$locales', ['$rootScope', '$i18next', '$cookies', ($rootScope, $i18next, $cookies)->
 	langs = [ 'kk', 'en', 'ru' ]
-	
+
 	this.langs = ->
 		langs
-	
+
 	this.current = ->
 		lang = $cookies.get 'lng'
-		lang or 'kk'
-	
+		lang or 'en'
+
 	this.changeLang = (lng)->
 		$i18next.options.lng = lng
 		$cookies.put 'lng',lng
@@ -17,6 +17,6 @@ angular.module('tmg').service '$locales', ['$rootScope', '$i18next', '$cookies',
         else
 			$rootScope.tinymceOptions =
 				language: lng
-		
+
 	$rootScope.$locales = this # global service
 ]

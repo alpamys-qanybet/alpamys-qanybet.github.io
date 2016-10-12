@@ -11,7 +11,7 @@
       this.current = function() {
         var lang;
         lang = $cookies.get('lng');
-        return lang || 'kk';
+        return lang || 'en';
       };
       this.changeLang = function(lng) {
         $i18next.options.lng = lng;

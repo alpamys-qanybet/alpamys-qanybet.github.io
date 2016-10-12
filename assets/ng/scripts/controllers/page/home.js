@@ -7,7 +7,7 @@
       $rootScope.current = 'home';
       $rootScope.showNav = false;
       $rootScope.random = Math.floor(Math.random() * $rootScope.randomRange);
-      $locales.changeLang('kk');
+      $locales.changeLang('en');
       $scope.menu = [
         {
           code: 'schedule',
