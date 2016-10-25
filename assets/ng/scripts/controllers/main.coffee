@@ -110,12 +110,15 @@ angular.module('tmg').controller 'MainCtrl', ['$scope', '$rootScope', '$state', 
 		name: 'RestAngular'
 		progress: 85
 	,
+		name: 'yeoman'
+		progress: 35
+	,
 		name: 'Bower'
 		progress: 35
 	,
 		name: 'Grunt'
 		progress: 25
-	]	
+	]
 
 	$scope.clock = new Date()
 

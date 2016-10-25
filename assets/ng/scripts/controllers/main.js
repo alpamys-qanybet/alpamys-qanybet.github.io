@@ -111,6 +111,9 @@
           name: 'RestAngular',
           progress: 85
         }, {
+          name: 'yeoman',
+          progress: 35
+        }, {
           name: 'Bower',
           progress: 35
         }, {
