@@ -1,0 +1,32 @@
+ul.tree {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  cursor: pointer;
+}
+
+hierarchial-tree-node li.tree-node {  
+  padding: 0px;
+  margin:0px;
+}
+
+hierarchial-tree-node li.tree-node.active {  
+  background-color: #428bca
+}
+
+hierarchial-tree-node li.tree-node.active a {
+  color: #fff;
+}
+
+hierarchial-tree-node li.tree-node:hover:not(.active) {
+  background-color: #eee;
+}
+
+hierarchial-tree-node li.tree-node a {
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+hierarchial-tree-node li.tree-node a i {
+  padding: 5px;
+}
