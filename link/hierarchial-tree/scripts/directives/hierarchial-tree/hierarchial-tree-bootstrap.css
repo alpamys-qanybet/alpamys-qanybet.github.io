@@ -1,0 +1,48 @@
+.tree-bootstrap a.wide {
+    display:block;
+}
+
+.tree-bootstrap {
+  width: 300px;
+  background: whitesmoke;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.tree-bootstrap ul.tree {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  cursor: pointer;
+}
+
+.tree-bootstrap li.tree-node {  
+  padding: 0px;
+  margin:0px;
+}
+
+.tree-bootstrap li.tree-node.active {
+  background-color: #428bca
+}
+
+.tree-bootstrap li.tree-node.active ul.tree li.tree-node {
+  background-color: whitesmoke !important;
+}
+
+.tree-bootstrap li.tree-node.active > a:first-child {
+  /*background-color: #428bca;*/
+  color: #fff;
+}
+
+.tree-bootstrap li.tree-node:hover:not(.active) {
+  background-color: #eee;
+}
+
+.tree-bootstrap li.tree-node a {
+  padding-left: 10px;
+  text-decoration: none !important;
+}
+
+.tree-bootstrap li.tree-node a i {
+  padding: 5px;
+}

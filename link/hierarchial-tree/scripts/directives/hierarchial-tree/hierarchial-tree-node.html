@@ -1,0 +1,8 @@
+<li ng-animate='tree-animate' class='tree-node' ng-class='{active: item.selected}'>
+	<a ng-click='select()'>
+		<span class='tree-label' id='item-content' ng-cloak></span> 
+		<button ng-show='item.hasChildren && !item.loaded' ng-click='load()'>Load</button>
+		<button ng-show='item.loaded && !item.open' ng-click='expand()'>Open</button>
+		<button ng-show='item.loaded && item.open' ng-click='collapse()'>Close</button>
+	</a>
+</li>
