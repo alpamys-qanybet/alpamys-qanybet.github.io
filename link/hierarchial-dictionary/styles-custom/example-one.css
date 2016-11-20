@@ -8,8 +8,8 @@
 	float: left; 
 }
 .breadcrumbs-ex-one li a {
-	color: white;
-	text-decoration: none; 
+	color: white !important;
+	text-decoration: none !important; 
 	padding: 10px 0 10px 55px;
 	background: brown;                   /* fallback color */
 	background: hsla(34,85%,35%,1); 
@@ -59,7 +59,7 @@
 .breadcrumbs-ex-one li:nth-child(5) a:after { border-left-color: hsla(34,85%,75%,1); }
 .breadcrumbs-ex-one li:last-child a {
 	background: white !important;
-	color: black;
+	color: black !important;
 	pointer-events: none;
 		cursor: default;
 }

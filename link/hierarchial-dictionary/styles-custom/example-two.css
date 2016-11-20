@@ -8,7 +8,7 @@
 	margin-left: -13px;
 	padding: 7px 17px 11px 25px;
 	position: relative;
-	text-decoration: none;
+	text-decoration: none !important;
 }
 
 .crumbs li a {
@@ -57,7 +57,7 @@
 	font-size: 12px;
 	padding: 7px 16px 7px 19px;
 	position: relative;
-	text-decoration: none;
+	text-decoration: none !important;
 	border: 1px solid #d9d9d9;
 	border-right-width: 0px;
 }

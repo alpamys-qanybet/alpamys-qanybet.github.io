@@ -1,0 +1,46 @@
+.tree-materialize a.wide {
+    display:block;
+}
+
+.tree-materialize {
+  width: 500px;
+}
+
+.tree-materialize ul.tree {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.tree-materialize li {  
+  padding: 0px !important;
+  margin: 0px !important;
+  cursor: pointer;
+}
+
+.tree-materialize li.active {  
+  background-color: #428bca;
+}
+
+.tree-materialize li.active > a {
+  color: #fff !important;
+}
+
+.tree-materialize li:hover:not(.active) {
+  background-color: #eee;
+}
+
+.tree-materialize li a {
+  /*padding-left: 10px;*/
+  width: 500px !important;
+  text-decoration: none;
+}
+
+.tree-materialize li i {
+  padding: 5px 0 0 13px;
+  font-size: 17px !important;
+}
+
+.tree-materialize li span {
+  font-size: 20px !important;
+}
+
