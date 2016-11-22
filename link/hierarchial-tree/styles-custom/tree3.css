@@ -1,0 +1,74 @@
+.tree-three a.wide {
+    display:block;
+}
+
+.tree-three {
+  /*width: 500px;*/
+}
+
+.tree-three ul.tree {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.tree-three li {  
+  padding: 0 !important;
+  margin: 0px !important;
+  cursor: pointer;
+}
+
+.three-tree li a.wide {
+  color: #000 !important;
+}
+
+.tree-three li.active {  
+  background-color: #428bca;
+}
+
+.tree-three li.active > a.wide {
+  color: #fff !important;
+}
+
+.tree-three li.active .secondary-content {
+  color: #26a69a !important;
+}
+
+.tree-three li.active  > .secondary-content {
+  color: #fff !important;
+}
+
+.tree-three li:hover:not(.active) {
+  background-color: #eee;
+}
+
+.tree-three li a.wide {
+  /*padding-left: 10px;*/
+  width: 100% !important;
+  height: 84px !important;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.tree-three li i:not(.my-folder) {
+  padding: 5px 0 0 13px;
+  /*font-size: 17px !important;*/
+}
+
+.tree-three li span.title {
+  top: -5px;
+  /*margin: -18px 0 0 70px !important;*/
+  /*font-size: 20px !important;*/
+}
+
+.tree-three li img.circle {
+  margin: 10px 10px 0 15px;
+}
+
+.tree-three li i.my-folder {
+  margin: 10px 10px 0 15px !important;
+}
+
+.tree-three li p {
+  margin: -20px 0 0 70px !important;
+}
+

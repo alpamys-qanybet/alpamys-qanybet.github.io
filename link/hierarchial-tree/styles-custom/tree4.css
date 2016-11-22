@@ -1,0 +1,76 @@
+.tree-four a.wide {
+  display:block;
+}
+
+.tree-four {
+  /*width: 50%;*/
+  height: 630px;
+  overflow-y: auto;
+}
+
+.tree-four ul.tree {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.tree-four li {  
+  padding: 0 !important;
+  margin: 0px !important;
+  cursor: pointer;
+}
+
+.three-tree li a.wide {
+  color: #000 !important;
+}
+
+.tree-four li.active {  
+  background-color: #428bca;
+}
+
+.tree-four li.active > a.wide {
+  color: #fff !important;
+}
+
+.tree-four li.active .secondary-content {
+  color: #26a69a !important;
+}
+
+.tree-four li.active  > .secondary-content {
+  color: #fff !important;
+}
+
+.tree-four li:hover:not(.active) {
+  background-color: #eee;
+}
+
+.tree-four li a.wide {
+  /*padding-left: 10px;*/
+  width: 100% !important;
+  height: 84px !important;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.tree-four li i:not(.my-folder) {
+  padding: 5px 0 0 13px;
+  /*font-size: 17px !important;*/
+}
+
+.tree-four li span.title {
+  top: -5px;
+  /*margin: -18px 0 0 70px !important;*/
+  /*font-size: 20px !important;*/
+}
+
+.tree-four li img.circle {
+  margin: 10px 10px 0 15px;
+}
+
+.tree-four li i.my-folder {
+  margin: 10px 10px 0 15px !important;
+}
+
+.tree-four li p {
+  margin: -20px 0 0 70px !important;
+}
+
