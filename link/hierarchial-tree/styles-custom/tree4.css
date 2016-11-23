@@ -20,7 +20,7 @@
 }
 
 .three-tree li a.wide {
-  color: #000 !important;
+  /*color: #000 !important;*/
 }
 
 .tree-four li.active {  
@@ -35,7 +35,11 @@
   color: #26a69a !important;
 }
 
-.tree-four li.active  > .secondary-content {
+.tree-four li.active > .secondary-content {
+  color: #fff !important;
+}
+
+.tree-four a.wide.active > .secondary-content {
   color: #fff !important;
 }
 
