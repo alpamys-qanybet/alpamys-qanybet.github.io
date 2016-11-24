@@ -1,0 +1,59 @@
+<div>
+	<style type="text/css">
+		ul.pagination li {
+			display: inline;
+		}
+
+		ul.custom-pagination-default select {
+			display:inline-block;
+			border-radius:0px;
+			vertical-align: top;
+		}
+
+		ul.custom-pagination-default button.active {
+			background-color: #aff;
+		}
+	</style>
+
+	<div ng-show="list.length>1">
+		<ul class="pagination custom-pagination-default">
+			<li>
+				<button ng-click="process(0)" ng-disabled="index == 0">
+					First
+				</button>
+			</li>
+			<li>
+				<button ng-click="process(index-1)" ng-disabled="index == 0">
+					Prev
+				</button>
+			</li>
+			<li ng-repeat="i in replist">
+				<button ng-click="process(i)" ng-class="{'active': index == i}">{{i+1}}</button>
+			</li>
+			<li ng-show="showIndex">
+				<select-option 
+					list="list" 
+					model="index" 
+					sw-options="item as (item+1) for item in list">
+				</select-option>
+			</li>
+			<li ng-show="showLimit">
+				<select-option 
+					list="limits" 
+					model="limit" 
+					sw-options="item as item for item in list">
+				</select-option>	
+			</li>
+			<li>
+				<button ng-click="process(index+1)" ng-disabled="index == (list.length-1)">
+					Next
+				</button>
+			</li>
+			<li>
+				<button ng-click="process(list.length-1)" ng-disabled="index == (list.length-1)">
+					Last
+				</button>
+			</li>
+		</ul>
+	</div>
+</div>

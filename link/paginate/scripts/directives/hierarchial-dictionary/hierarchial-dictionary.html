@@ -1,0 +1,9 @@
+<div>
+	<div ng-repeat="node in path track by $index">
+		<select-option 
+			list="node.elements"
+			model="node.selected" 
+			sw-options="{{expression}}">
+		</select-option>
+	</div>
+</div>

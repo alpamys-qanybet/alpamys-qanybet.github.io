@@ -1,0 +1,56 @@
+<div>
+	<style type="text/css">
+		ul.custom-pagination-bootstrap select {
+			display: inline-block !important;
+			width: 85px !important;
+			border-radius:0px !important;
+			float: left !important;
+			vertical-align: top !important;
+			margin-left: -1px !important;
+		}
+	</style>
+
+	<div ng-show="list.length>1">
+		<ul class="pagination custom-pagination-bootstrap">
+			<li ng-class="{'disabled': index == 0}">
+				<a ng-click="process(0)">
+					<span aria-hidden="true">&laquo;</span>
+				</a>
+			</li>
+			<li ng-class="{'disabled': index == 0}">
+				<a ng-click="process(index-1)">
+					<span aria-hidden="true">&lt;</span>
+				</a>
+			</li>
+			<li ng-repeat="i in replist" ng-class="{'active': index == i}">
+				<a ng-click="process(i)">{{i+1}}</a>
+			</li>
+			<li ng-show="showIndex">
+				<select-option 
+					list="list" 
+					model="index" 
+					class="form-control"
+					sw-options="item as (item+1) for item in list">
+				</select-option>
+			</li>
+			<li ng-show="showLimit">
+				<select-option 
+					list="limits" 
+					model="limit" 
+					class="form-control"
+					sw-options="item as item for item in list">
+				</select-option>	
+			</li>
+			<li ng-class="{'disabled': index == (list.length-1)}">
+				<a ng-click="process(index+1)">
+					<span aria-hidden="true">&gt;</span>
+				</a>
+			</li>
+			<li ng-class="{'disabled': index == (list.length-1)}">
+				<a ng-click="process(list.length-1)">
+					<span aria-hidden="true">&raquo;</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
