@@ -1,0 +1,4 @@
+.breadcrumb:hover {
+	cursor: pointer !important;
+	color: #fff;
+}

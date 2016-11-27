@@ -1,0 +1,6 @@
+<li>
+	<a ng-click="$parent.process(item.id)">
+		<span ng-show="!$parent.root&&$parent.$first" class="glyphicon glyphicon-home"></span>
+		<span ng-show="$parent.root||!$parent.$first" class='item-content'></span>
+	</a>
+</li>

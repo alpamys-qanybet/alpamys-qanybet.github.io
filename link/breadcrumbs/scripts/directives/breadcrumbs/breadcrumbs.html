@@ -1,9 +1,7 @@
-<div class="row breadcrubms" ng-show="list.length > 1">
-	<ul id="breadcrumb">
-		<li ng-repeat="b in list track by $index">
-			<a ng-click="process(b.id)">
-				<span>{{b.name}}</span>
-			</a>
-		</li>
-	</ul>
-</div>
+<ul>
+	<breadcrumbs-item
+		ng-repeat="c in list track by $index"
+		item="c"
+		content-url='{{contentUrl}}'>
+	</breadcrumbs-item>
+</ul>
