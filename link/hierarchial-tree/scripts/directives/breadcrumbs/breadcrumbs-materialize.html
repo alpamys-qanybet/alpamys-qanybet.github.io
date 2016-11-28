@@ -1,0 +1,14 @@
+<nav>
+	<div class="nav-wrapper">
+		<div class="col s12">
+			<breadcrumbs-item
+				ng-repeat="c in list track by $index"
+				item="c"
+				class="breadcrumb" 
+				ng-class="{active: $last}"
+				content-url='{{contentUrl}}'
+				template='materialize'>
+			</breadcrumbs-item>
+		</div>
+	</div>
+</nav>

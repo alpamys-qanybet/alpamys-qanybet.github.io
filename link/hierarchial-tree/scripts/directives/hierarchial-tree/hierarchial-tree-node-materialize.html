@@ -5,6 +5,6 @@
 		<i ng-show='item.hasChildren && !item.loaded' ng-click='load()' class="material-icons" ng-style='item.indented'>add_box</i>
 		<i ng-show='item.loaded && !item.open' ng-click='expand()' class='material-icons' ng-style='item.indented'>add_box</i>
 		<i ng-show='item.loaded && item.open' ng-click='collapse()' class='material-icons' ng-style='item.indented'>indeterminate_check_box</i>
-		<span ng-style='item.indented' id='item-content' ng-cloak></span>
+		<span ng-style='item.indented' class='item-content' ng-cloak></span>
 	</a>
 </li>

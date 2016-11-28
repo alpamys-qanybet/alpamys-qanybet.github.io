@@ -5,7 +5,7 @@
 			<i ng-show='item.hasChildren && !item.loaded' ng-click='load()' class='glyphicon glyphicon-plus' ng-style='item.indented'></i>
 			<i ng-show='item.loaded && !item.open' ng-click='expand()' class='glyphicon glyphicon-plus' ng-style='item.indented'></i>
 			<i ng-show='item.loaded && item.open' ng-click='collapse()' class='glyphicon glyphicon-minus' ng-style='item.indented'></i>
-			<span class='tree-label' ng-style='item.indented' id='item-content' ng-cloak></span>
+			<span class='tree-label item-content' ng-style='item.indented' ng-cloak></span>
 		</a>
 	</li>
 </div>
