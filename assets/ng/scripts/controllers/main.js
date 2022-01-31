@@ -39,6 +39,18 @@
           name: 'Design Patterns',
           progress: 35
         }, {
+          name: 'GoLang, Gin',
+          progress: 20
+        }, {
+          name: 'React Native, React Native Navigation',
+          progress: 90
+        }, {
+          name: 'XCode, Android Studio',
+          progress: 60
+        }, {
+          name: 'Push Notifications',
+          progress: 85
+        }, {
           name: 'Java SE, EE6, EE7',
           progress: 90
         }, {
@@ -75,7 +87,7 @@
           name: 'Maven, Gradle',
           progress: 60
         }, {
-          name: 'HornetQ, Qpidd, JMS',
+          name: 'HornetQ, Qpidd, JMS, Rabbitmq',
           progress: 90
         }, {
           name: 'PostgreSQL, MySQL, Oracle',
