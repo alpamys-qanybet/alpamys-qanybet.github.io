@@ -30,7 +30,7 @@ angular.module('tmg', ['ui.router', 'restangular', 'ngCookies', 'ngSanitize', 'j
 		$stateProvider
 		.state('home', {
 			url: '/home',
-			templateUrl: 'assets/ng/views/home.html',
+			templateUrl: 'assets/ng/views/home.html?nocache=afdasfas',
 			controller: 'HomeCtrl'
 		})
 		.state('project', {
