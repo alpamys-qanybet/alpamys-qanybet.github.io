@@ -30,7 +30,7 @@ angular.module('tmg', ['ui.router', 'restangular', 'ngCookies', 'ngSanitize', 'j
 		$stateProvider
 		.state('home', {
 			url: '/home',
-			templateUrl: 'assets/ng/views/home.html?nocache=afdasfas',
+			templateUrl: 'assets/ng/views/home.html',
 			controller: 'HomeCtrl'
 		})
 		.state('project', {
@@ -74,4 +74,8 @@ angular.module('tmg', ['ui.router', 'restangular', 'ngCookies', 'ngSanitize', 'j
 		$rootScope.random = Math.floor(Math.random() * $rootScope.randomRange);
 
 		$rootScope.covering = true;
+
+		$rootScope.$on('$routeChangeStart', function() {
+      $templateCache.removeAll();
+   	});
 	}]);
