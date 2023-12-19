@@ -40,7 +40,13 @@
           progress: 35
         }, {
           name: 'GoLang, Gin',
-          progress: 20
+          progress: 40
+        }, {
+          name: 'Wireshark',
+          progress: 40
+        }, {
+          name: 'Protocols',
+          progress: 40
         }, {
           name: 'React Native, React Native Navigation',
           progress: 90
