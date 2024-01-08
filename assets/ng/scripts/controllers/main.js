@@ -40,13 +40,19 @@
           progress: 35
         }, {
           name: 'GoLang, Gin',
-          progress: 40
+          progress: 70
+        }, {
+          name: 'C',
+          progress: 20
         }, {
           name: 'Wireshark',
-          progress: 40
+          progress: 60
         }, {
           name: 'Protocols',
-          progress: 40
+          progress: 60
+        }, {
+          name: 'DPDK',
+          progress: 60
         }, {
           name: 'React Native, React Native Navigation',
           progress: 90
@@ -102,8 +108,8 @@
           name: 'Linux, Remote Server Administration, Bash Scripting',
           progress: 40
         }, {
-          name: 'Eclipse, IntellijIDEA',
-          progress: 60
+          name: 'Eclipse, IntellijIDEA, VS Code',
+          progress: 70
         }, {
           name: 'vim, Sublime, Atom',
           progress: 40
